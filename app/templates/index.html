@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulation Testing Lab</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="container">
+<section class="hero">
+<p class="eyebrow">DEVOPS SIMULATION PLATFORM</p>
+<h1>Simulation Testing Lab</h1>
+<p>Internal platform for practicing deployment, reliability, automation and DevSecOps.</p>
+</section>
+<section class="grid">
+<div class="card"><span>Version</span><strong>{{ version }}</strong></div>
+<div class="card"><span>Environment</span><strong>{{ environment }}</strong></div>
+<div class="card"><span>Health</span><strong class="ok">ONLINE</strong></div>
+</section>
+<section class="card">
+<h2>Platform endpoints</h2>
+<ul>
+<li><a href="/health">Health</a></li>
+<li><a href="/ready">Readiness</a></li>
+<li><a href="/version">Version</a></li>
+<li><a href="/metrics">Metrics</a></li>
+<li><a href="/api/info">API Info</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>
