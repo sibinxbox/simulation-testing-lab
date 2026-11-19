@@ -60,3 +60,7 @@ def create_user():
     db.session.add(user)
     db.session.commit()
     return jsonify(user.to_dict()), 201
+
+@bp.get("/api/status")
+def status():
+    return jsonify({"status": "running", "service": "simulation-testing-lab"})

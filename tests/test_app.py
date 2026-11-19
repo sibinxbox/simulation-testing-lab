@@ -20,3 +20,8 @@ def test_info():
     response = client.get("/api/info")
     assert response.status_code == 200
     assert response.json["service"] == "simulation-testing-lab"
+def test_status():
+    client = create_app().test_client()
+    response = client.get("/api/status")
+    assert response.status_code == 200
+    assert response.json["status"] == "running"
